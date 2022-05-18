@@ -1,9 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #333;
-    color: white;
+    color: #ccba8f;
 }
 
 header .info {
@@ -15,14 +15,14 @@ header .info {
 }
 
 header h1 {
-    background-color: #e0ffe0;
+    background-color: #c4ae7b;
     color: #333;
     margin: 0;
     padding: 20px 0 20px 15px;
 }
 
 nav {
-    background-color: #e0ffe0;
+    background-color: #c4ae7b;
     padding:10px;
 }
 
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #e6dfcb;
     text-decoration: none;
     padding: 15px 0;
     display: block;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4a0;
+    color: rgb(102, 62, 1);
 }
 
 nav .searchbox {
@@ -72,12 +72,12 @@ nav .searchbox button:hover {
 
 footer {
     padding: 25px;
-    color: #eee;
+    color: #ccba8f;
     background-color: #333;
 }
 
 main {
-    background-color: white;
+    background-color: #cec3aa;
     color:#333;
     padding: 30px 0;
 }
@@ -99,12 +99,12 @@ main {
 }
 
 .card:hover {
-    box-shadow: 0 0 7px #ada;
+    box-shadow: 0 0 7px #6e4904;
 
 }
 
 .card a:hover {
-    color: #4a0;
+    color: #6e4904;
 }
 
 .card .image {
@@ -120,3 +120,64 @@ main {
     transition: all 300ms;
     transform: scale(1.2);
 }
+
+.input-number {
+    position: relative;
+    display: inline-block;
+    }
+
+    .form-control.form-number {
+    width: 60px;
+    margin-right: 12px;
+    border: 1px solid transparent;
+    text-align: center;
+    height: 20px;
+    float: left;
+    background: #ffffff;
+    }
+
+    .btn-count-minus {
+    bottom: 0;
+    }
+    .btn-count-plus {
+    top: 0;
+    }
+
+    .btn-count {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 50%;
+    background: #6e4904;
+    border-radius: 0;
+    text-align: center;
+    line-height: 15px;
+    font-size: 9px;
+    color: white;
+    z-index: 9999;
+    cursor: pointer;
+    }
+
+    .btn-default {
+    font-size: 9px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #c4ae7b;
+    padding: 0 30px;
+    border-radius: 3px;
+    }
+
+    .btn-default:hover{
+    background-color:#c4ae7b;
+    }
+    .btn-default {
+    height: 25px;
+    line-height: 25px;
+    }
+
+    a {
+    text-decoration: none;
+    } 
