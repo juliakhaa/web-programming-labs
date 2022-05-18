@@ -14,6 +14,21 @@
                 return false;
             }
 
+            function AboutDiscounts() {
+                alert('Hurry, discounts coming soon!\nСпешите, скоро скидки!');
+                return false;
+            }
+
+            function Address() {
+                alert('Dimitrova avenue, 2\nПроспект Димитрова, 2');
+                return false;
+            }
+
+            function Buy() {
+                alert('Select quantity, if you want to buy\nЕсли хотите купить товар, выберите количество');
+                return false;
+            }
+
             function search() {
                 let name = document.getElementById('search').value;
                 let productNumber = null;
@@ -50,7 +65,7 @@
 
     <body onload="loaded()">
         <header>
-            <div class="info">YulikHasBrands. Телефон: +7(913)948-55-11.</div>
+            <div class="info" onclick="return Address()">YulikHasBrands. Телефон: +7(913)948-55-11.</div>
             <h1>Маркет. Одежда</h1>
         </header>
 
@@ -80,8 +95,8 @@
                         </span>
                         <a rel="nofollow" href="#" class="btn-default">Купить</a>
                     </form>
-                    <div class="product-name">Панама Dickies</div>
-                    <div class="price">5000 &#8381;</div>
+                    <div class="product-name" onclick="return Buy()">Панама Dickies</div>
+                    <div class="price" onclick="return AboutDiscounts()">5000 &#8381;</div>
                 </a>
             </div>
             
@@ -96,8 +111,8 @@
                         </span>
                         <a rel="nofollow" href="#" class="btn-default">Купить</a>
                     </form>
-                    <div class="product-name">Лонгcлив The North Face</div>
-                    <div class="price">7500 &#8381;</div>
+                    <div class="product-name" onclick="return Buy()">Лонгcлив The North Face</div>
+                    <div class="price" onclick="return AboutDiscounts()">7500 &#8381;</div>
                 </a>
             </div>
 
@@ -112,8 +127,8 @@
                         </span>
                         <a rel="nofollow" href="#" class="btn-default">Купить</a>
                     </form>
-                    <div class="product-name">Кроссовки New Balance</div>
-                    <div class="price">20990 &#8381;</div>
+                    <div class="product-name" onclick="return Buy()">Кроссовки New Balance</div>
+                    <div class="price" onclick="return AboutDiscounts()">20990 &#8381;</div>
                 </a>
             </div>
 
