@@ -67,7 +67,7 @@ function generateMenu() {
         {href: '', text: 'Контакты'},
         {href: '', text: 'Доставка'},
         {href: '', text: 'Акции'},
-        {href: '', text: 'О нас'},
+        {href: 'about-us.html', text: 'О нас'},
     ];
 
     for(let i = 0; i<items.length; i++) {
@@ -85,6 +85,28 @@ function generateMenu() {
     }
 }
 
+function generateCards() {
+    let items = [
+        {href: 'product1.html', text: 'Панама Dickies ', image: 'dickies.PNG', price: 5000},
+        {href: 'product2.html', text: 'Лонгcлив The North Face', image: 'tnf.png', price: 7500},
+        {href: 'product3.html', text: 'Кроссовки New Balance', image: 'nb1.jpg', price: 20990},
+    ];
+
+    let main = document.getElementsByTagName('main')[0];
+    for(let i=0; i<items.length; i++) {
+        let card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+            <a href="${items[i].href}">Панама Dickies
+                <div class="image"><img src="${items[i].image}"></div>
+                <div class="product name">${items[i].text}</div>
+                <div class="price">${items[i].price}&#8381;</div>
+            </a>`;
+
+        main.appendChild(card);
+    }
+}
+
 function loaded() {
     let searchbox = document.getElementById('search');
     searchbox.addEventListener('keydown', function (key) {
@@ -93,4 +115,5 @@ function loaded() {
     });
 
     generateMenu();
+    generateCards();
 }
